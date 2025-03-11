@@ -16,6 +16,7 @@ LIST OF ALL THE WARNINGS:
 ---
 # Prerequisites:
 * **A rooted device.**
+* **Consider readding the Limitations.md file.**
 * **/system partition *being* read-write is best. (This does cover if /system is not read write).**
 * **Dm-0 verity and AVB 2.0 must be disabled..**
 * **Some good amount of space in /data to store a Linux rootfs**
