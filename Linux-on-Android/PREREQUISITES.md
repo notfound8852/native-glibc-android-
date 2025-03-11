@@ -1,4 +1,4 @@
-# *** WARNING: ⚠️***
+# *** WARNING: ⚠***
 **DO ALL OF THIS AT YOUR OWN RISK!!**
 LIST OF ALL THE WARNINGS:
 * **Rooting** may lead to soft bricking your device try it at your own risk.
