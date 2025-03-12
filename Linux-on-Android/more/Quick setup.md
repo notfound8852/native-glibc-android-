@@ -16,4 +16,10 @@ umount /sbin
 mount --bind /data/rootfs/sbin /sbin
 
 ```
+```bash
+apt update
+apt upgrade -y
+# done
+```
+
 You can see the limitations **[here.](https://github.com/notfound8852/native-glibc-android-/tree/main/Linux-on-Android/more/Limitations.md)**
