@@ -17,6 +17,7 @@ mount --bind /data/rootfs/sbin /sbin
 
 ```
 ```bash
+# quick warning do not try to install systemd if you are using the latest rootfs it will break apt
 apt update
 apt upgrade -y
 # done
