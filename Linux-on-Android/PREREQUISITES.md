@@ -14,9 +14,11 @@ LIST OF ALL THE WARNINGS:
 * **DO NOT ASK FOR SUPPORT IF YOU BREAK YOUR DEVICE.** You have been warned.
 ---
 ---
+To get a better understanding please read the Limitations file before starting and make sure you are okay with knowing the limitations. You can read it **[here]
+(https://github.com/notfound8852/native-glibc-android-/blob/main/Linux-on-Android/more/Limitations.md)**
+---
 # Prerequisites:
 * **A rooted device.**
-* **Consider readding the Limitations.md file.**
 * **/system partition *being* read-write is best. (This does cover if /system is not read write).**
 * **Dm-0 verity and AVB 2.0 must be disabled..**
 * **Some good amount of space in /data to store a Linux rootfs**
