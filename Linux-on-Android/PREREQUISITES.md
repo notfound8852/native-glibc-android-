@@ -16,6 +16,7 @@ LIST OF ALL THE WARNINGS:
 ---
 To get a better understanding please read the Limitations file before starting and make sure you are okay with knowing the limitations. You can read it **[here]
 (https://github.com/notfound8852/native-glibc-android-/blob/main/Linux-on-Android/more/Limitations.md)**
+
 ---
 # Prerequisites:
 * **A rooted device.**
