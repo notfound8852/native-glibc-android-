@@ -68,15 +68,16 @@ su
 
 ---
 #### Forth Step:
-If selinux is not disabled in disable it temporarily..
-If it returns "enforcing" then selinux is enabled. If it returns "permissive" you are good to go and can skip this step.
-To disable selinux run:
+If selinux is not disabled, disable it temporarily..
+
 ### To check:
 
-To check for selinux run
+To check if selinux is enabled run:
 ```sh
 getenforce
 ```
+If it returns "enforcing" then selinux is enabled. If it returns "permissive" you are good to go and can skip this step.
+
 ### Disabling:
 
 **Note:** If you have not modified your device in anyway related to selinux it will be 'on' (set to 1) and therefore needs to be turned off for this you need to run:
@@ -110,14 +111,14 @@ ls: cannot access '/bin': No such file or directory
 
 ---
 #### Seventh Step:
-This is copying over all of android's binaries and files over to the linux rootfs. We do this so that android's init or the linker still has all the binaries it needs without bothering us.
+This is copying over all of android's binaries and files over to the linux rootfs. We do this so that android's init or the linker still has all the binaries it needs and in turn doesn't bother us.
 ```sh
 cp -r /sbin/* /data/rootfs/sbin/
 cp -r /lib/* /data/rootfs/lib/
 cp -r /root/* /data/rootfs/root/
 ```
 
-Now /etc is a bit different since it is a link to /system/etc. 
+Now /etc is a bit different since it is a symbolic link to /system/etc. 
 
 ---
 **OPTIONALLY:** You can simply unlink it and not have to worry about /etc entirely.. This can be done by like this:
@@ -130,7 +131,7 @@ you can include the `mkdir /etc` in the later provided script.. I am not too sur
 
 ---
 ---
-**Directly (My prefered method):**
+**Directly (Prefered method though a bit finicky):**
 But if you don't want to do that you can check for the overlapping files (these will be passwd, group, host). You can simply merge these. 
 ```sh
 cat /system/etc/hosts /data/rootfs/etc/hosts > ./new_hosts
@@ -213,7 +214,7 @@ umount /sbin
 
 ##### Set the permissions:
 ```sh
-chmod +x setup_linux
+chmod +x ./setup_linux
 ```
 **Optional:** You can go place this in /system/bin or /system/xbin or whatever `bin` folder you find convenient..
 
@@ -227,10 +228,10 @@ export PATH=/usr/sbin:/usr/bin:$PATH
 #### Verify:
 ```sh
 bash
-apt update
 ```
 ---
 ---
-If there are any issues please refer to the Issues.md file
+If there are any issues please refer to the Issues.md file. **[Here](https://github.com/notfound8852/native-glibc-android-/blob/main/Linux-on-Android/Issues.md)**
+For convenience here is a quick setup **[guide](https://github.com/notfound8852/native-glibc-android-/blob/main/Linux-on-Android/more/Quick%20setup.md)**
 
 ***Enjoy!***
