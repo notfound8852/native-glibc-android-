@@ -6,7 +6,11 @@ groupadd -g 1003 aid_graphics
 usermod -g 3003 -G 3003,3004 -a _apt
 usermod -G 3003 -a root
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
-# if you used magisk run the below:
+
+```
+
+If you used magisk to root your device and the magisk binary is in /sbin run the following:
+```sh
 umount /sbin
 /sbin/su -c "/bin/bash"
 mount --bind /data/rootfs/sbin /sbin
