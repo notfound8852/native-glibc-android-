@@ -2,7 +2,8 @@
 **DO ALL OF THIS AT YOUR OWN RISK!!**
 LIST OF ALL THE WARNINGS:
 * **Rooting** may lead to soft bricking your device try it at your own risk.
-* **Disabling dm-0 verity: **
+* **Disabling dm-0 verity: risk of messing up the bootlaoder in certain cases**
+* **Optional but recommended for a better experience: Install busybox for android**
 * You **must** know how to recover your device in case something breaks.
 * If you brick your device, that's on **you**.
 * The following steps modifies the system attempt at your own risk. 
