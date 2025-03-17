@@ -20,3 +20,8 @@ System has not been booted with systemd as init system (PID 1). Can't operate.
 Failed to connect to bus: Host is down
 ```
 that is because it is trying to run systemd related commands on android and to run whatever binary that was failing specify its full path like for `reboot` do `/system/bin/reboot`..
+If sudo command fails with some suid issue run the following:
+```sh
+/usr/bin/su 
+apt install --reinstall sudo
+# add yourself or user to /etc/sudoers
