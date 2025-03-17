@@ -234,4 +234,13 @@ bash
 If there are any issues please refer to the Issues.md file. **[Here](https://github.com/notfound8852/native-glibc-android-/blob/main/Linux-on-Android/Issues.md)**
 For convenience here is a quick setup **[guide](https://github.com/notfound8852/native-glibc-android-/blob/main/Linux-on-Android/more/Quick%20setup.md)**
 
+and for the love of God if you plan on using apt like a sane human being please make sure to run the following:
+```sh
+groupadd -g 3003 aid_inet
+groupadd -g 3004 aid_net_raw
+groupadd -g 1003 aid_graphics
+usermod -g 3003 -G 3003,3004 -a _apt
+usermod -G 3003 -a root
+```
+
 ***Enjoy!***
