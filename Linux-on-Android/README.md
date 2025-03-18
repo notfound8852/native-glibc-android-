@@ -243,6 +243,8 @@ groupadd -g 3004 aid_net_raw
 groupadd -g 1003 aid_graphics
 usermod -g 3003 -G 3003,3004 -a _apt
 usermod -G 3003 -a root
+groupadd storage
+groupadd wheel
 ```
 
 ***Enjoy!***
