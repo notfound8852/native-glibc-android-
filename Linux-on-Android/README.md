@@ -173,6 +173,7 @@ mount --bind $ROOTFS/srv /srv
 mount --bind $ROOTFS/tmp /tmp
 mount --bind $ROOTFS/var /var
 mount --bind $ROOTFS/root /root
+mount --bind $ROOTFS/media /media
 ln -s /usr/lib /lib
 ln -s /usr/lib64 /lib64
 mount --bind $ROOTFS/bin /bin
@@ -188,6 +189,7 @@ rm -rf /lib
 
 mkdir /bin /sbin /boot /home /media  /opt  /run  /srv  /tmp  /usr  /var /boot /root
 mount --bind $ROOTFS/etc /system/etc
+mount --bind $ROOTFS/media /media
 mount --bind $ROOTFS/usr /usr
 mount --bind $ROOTFS/boot /boot
 mount --bind $ROOTFS/media /media
