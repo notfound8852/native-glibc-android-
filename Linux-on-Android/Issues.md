@@ -24,4 +24,7 @@ If sudo command fails with some suid issue run the following:
 ```sh
 /usr/bin/su 
 apt install --reinstall sudo
+busybox mount -o remount,dev,suid /usr # if u have busybox
+# otherwise try mount
+mount -o remount,dev,suid /usr
 # add yourself or user to /etc/sudoers
